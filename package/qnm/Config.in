@@ -1,0 +1,5 @@
+# QNM custom packages
+
+menu "QNM Packages"
+    source "$BR2_EXTERNAL_QNM_PATH/package/qnm/hello-world/Config.in"
+endmenu

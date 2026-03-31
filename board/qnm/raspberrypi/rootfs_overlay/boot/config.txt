@@ -1,0 +1,10 @@
+# QNM custom config for RPi 4B
+dtparam=i2c_arm=on
+dtparam=spi=on
+dtoverlay=vc4-kms-v3d-pi4
+gpu_mem=128
+
+# U-Boot for Raspberry Pi 4B 64-bit
+enable_uart=1
+arm_64bit=1
+kernel=u-boot.bin

@@ -1,0 +1,34 @@
+# =============================================
+# genimage.cfg for Raspberry Pi 4B 64-bit + U-Boot
+# =============================================
+
+image boot.vfat {
+    vfat {
+        files = {
+            "u-boot.bin",
+            "config.txt",
+            "uboot.env",
+            "Image",
+            "*.dtb",
+            "rpi-firmware/*"
+        }
+        size = 256M
+    }
+}
+
+image sdcard.img {
+    hdimage {
+        align = 4M
+    }
+
+    partition boot {
+        partition-type = 0xC
+        bootable = "true"
+        image = "boot.vfat"
+    }
+
+    partition rootfs {
+        partition-type = 0x83
+        image = "rootfs.ext4"
+    }
+}

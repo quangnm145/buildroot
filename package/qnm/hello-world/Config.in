@@ -1,0 +1,6 @@
+config BR2_PACKAGE_HELLO_WORLD
+    bool "hello-world"
+    help
+      Simple Hello World example package created in br2-external.
+      
+      This is a demonstration of how to add your own package.
