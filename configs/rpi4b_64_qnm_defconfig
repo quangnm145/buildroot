@@ -35,7 +35,7 @@ BR2_cortex_a72=y
 BR2_ARM_FPU_VFPV4=y
 
 # ==================== Toolchain ====================
-BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_6_6=y
+BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_6_12=y
 BR2_TOOLCHAIN_BUILDROOT_CXX=y
 
 # ==================== Global settings ====================
